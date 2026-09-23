@@ -1,11 +1,14 @@
-# Multi-Decadal Urban Heat Island (UHI) & Surface Warming Dynamics
+# Automated Satellite Vegetation Health & Phenology Monitoring
 
-A cloud-native Earth Observation pipeline in **Google Earth Engine (GEE)** analyzing 10+ years of Landsat 8/9 Level-2 TIR data to quantify surface warming rates in Visakhapatnam.
+A Google Earth Engine pipeline monitoring multi-temporal NDVI dynamics and seasonal vegetation health using Sentinel-2 MSI collections.
 
-## Key Highlights
-- **Methodology:** Single-channel emissivity correction using scaled NDVI and Fractional Vegetation Cover .
-- **Trend Analysis:** Ordinary Least Squares (OLS) linear regression  to calculate warming velocity (°C/year).
-- **Interface:** Dynamic on-screen cartographic legend and time-series phenology chart.
+## Features
+- **QA Cloud Masking:** Automated pixel-level QA bitwise masking (`QA60` / `s2cloudless`) to eliminate atmospheric contamination.
+- **Time-Series Analysis:** Generated multi-month median composites and time-series charts to track vegetative phenological variations.
+- **Zonal Statistics:** Evaluated canopy greenness and vegetative degradation across regional parcels.
 
 
 
+## Tools
+- Google Earth Engine (JavaScript API)
+- Sentinel-2 Level-2A Surface Reflectance
